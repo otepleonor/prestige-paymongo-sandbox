@@ -9,17 +9,26 @@
   </head>
   <body>
     <main class="page">
-      <p class="eyebrow">Prestige Wellness · Test mode</p>
-      <h1>The test checkout was closed.</h1>
+      <p class="environment">Prestige Wellness · Test mode</p>
+      <h1>Your payment was not completed.</h1>
       <p class="lede">
-        No payment result is assumed from this page. The test appointment remains subject to the sandbox cleanup procedure.
+        No charge is assumed from this page. Your selected appointment may still exist, so keep the reference below.
       </p>
       <dl class="reference">
         <dt>Sandbox reference</dt>
         <dd data-reference>Not provided</dd>
       </dl>
-      <p class="notice">Retry only with the same payment operation to avoid duplicate charges.</p>
-      <a class="text-link" href="../">Return to sandbox overview</a>
+      <p class="notice" data-state-message>
+        To avoid a duplicate charge, use the same payment link to retry. Return to booking only when you need a new appointment.
+      </p>
+      <div class="actions" aria-label="Next steps">
+        <a class="button" href="https://api.leadconnectorhq.com/booking/prestige-wellness-bgc-b5i4j5h9j9b">
+          Return to booking
+        </a>
+        <a class="text-link" href="https://otepleonor.github.io/prestige-wellness-teaser/v3/">
+          Back to Prestige Wellness
+        </a>
+      </div>
     </main>
     <script src="../status.js" defer></script>
   </body>

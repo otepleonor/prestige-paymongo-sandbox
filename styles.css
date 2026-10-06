@@ -26,7 +26,7 @@ body {
   justify-content: center;
 }
 
-.eyebrow {
+.environment {
   margin: 0 0 24px;
   font-size: 12px;
   font-weight: 600;
@@ -61,11 +61,19 @@ h1 {
 }
 
 .button {
+  display: inline-flex;
   min-height: 48px;
   padding: 14px 20px;
+  align-items: center;
+  justify-content: center;
   color: #faf7f2;
   background: #1c1a17;
+  font-weight: 600;
   text-decoration: none;
+}
+
+.button:hover {
+  background: #3a352f;
 }
 
 .text-link {
@@ -103,9 +111,37 @@ h1 {
   max-width: 62ch;
   margin: 36px 0 24px;
   padding: 16px;
-  border-left: 3px solid #8a7b63;
+  border: 1px solid rgba(138, 123, 99, 0.32);
   color: rgba(28, 26, 23, 0.72);
   background: rgba(138, 123, 99, 0.08);
   font-size: 14px;
   line-height: 1.6;
+}
+
+.notice[data-tone="warning"] {
+  border-color: #9a6a2f;
+  color: #573811;
+  background: #f4e8d7;
+}
+
+::selection {
+  color: #faf7f2;
+  background: #1c1a17;
+}
+
+@media (max-width: 520px) {
+  .page {
+    justify-content: flex-start;
+    padding-block: 48px;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
